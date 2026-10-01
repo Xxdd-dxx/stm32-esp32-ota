@@ -1,0 +1,45 @@
+# ---------- Keil MDK-ARM 编译产物 ----------
+*.o
+*.d
+*.crf
+*.axf
+*.lst
+*.htm
+*.map
+*.dep
+*.lnp
+*.jd
+*.plg
+*.tra
+*.iex
+*.bak
+*.build_log.htm
+*.scvd
+*.uvoptx          # 含本机调试配置与个人路径
+*.dbgconf
+Objects/
+Listings/
+DebugConfig/
+RTE/
+EventRecorderStub.scvd
+
+# Keil 输出目录下的 hex/bin（tools/ 下的测试固件不忽略）
+stm32_bootloader/MDK-ARM/*/*.hex
+stm32_bootloader/MDK-ARM/*/*.bin
+stm32_app/MDK-ARM/*/*.hex
+stm32_app/MDK-ARM/*/*.bin
+
+# ---------- ESP-IDF ----------
+esp32_downloader/build/
+esp32_downloader/managed_components/
+esp32_downloader/sdkconfig.old
+esp32_downloader/dependencies.lock
+
+# ---------- 编辑器 / 系统 ----------
+.vscode/
+.idea/
+*.uvguix.*
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

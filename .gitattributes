@@ -1,0 +1,15 @@
+# 统一换行符，避免 Windows/Linux 协作时整文件 diff
+* text=auto
+
+*.c    text diff=cpp
+*.h    text diff=cpp
+*.s    text
+*.sct  text
+*.md   text diff=markdown
+*.py   text diff=python
+
+# 二进制：不要做文本转换
+*.bin  binary
+*.hex  binary
+*.ioc  text eol=crlf
+*.uvprojx text eol=crlf
